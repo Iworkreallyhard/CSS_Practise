@@ -16,6 +16,10 @@ app.get('/grid', (req, res) => {
     res.render('grid')
 })
 
+app.get('/calendar/day', (req, res) => {
+    res.render('dayView')
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
